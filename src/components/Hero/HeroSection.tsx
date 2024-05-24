@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Spotlight } from "../ui/Spotlight";
 import { Button } from "../ui/moving-border";
-import Blockchains from "../Blockchains/Blockchains";
+import Blockchains from "../Intro/Blockchains";
 
 const logos = [
   {
