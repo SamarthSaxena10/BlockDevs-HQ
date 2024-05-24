@@ -9,7 +9,7 @@ import { EvervaultCard, Icon } from "../ui/evervault-card";
 
 const Header: React.FC = () => (
   <LampContainer>
-    <motion.h1
+    <motion.div
       initial={{ opacity: 0.5, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
@@ -17,10 +17,16 @@ const Header: React.FC = () => (
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      className="mt-8 text-center"
     >
-      Explore Blockchains <br /> & Protocols
-    </motion.h1>
+      <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-4xl font-medium tracking-tight text-transparent md:text-7xl">
+        Explore Blockchains <br /> & Protocols
+      </h1>
+      <p className="mt-4 text-lg md:text-2xl text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
+        Discover the latest advancements in blockchain technology covering all
+        the way from protocols to Cross-Chain.
+      </p>
+    </motion.div>
   </LampContainer>
 );
 
@@ -57,7 +63,7 @@ const ChainlinkCard: React.FC = () => (
       </CardItem>
       <CardItem translateZ="100" className="w-full mt-4">
         <Image
-          src="https://th.bing.com/th/id/OIP.FgGFG3YWH-aFkG1a2VTMOQAAAA?rs=1&pid=ImgDetMain"
+          src="https://assets-global.website-files.com/5f6b7190899f41fb70882d08/651a02392cf2f40b253c6025_hexagon-3d.svg"
           height={1000}
           width={1000}
           className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
