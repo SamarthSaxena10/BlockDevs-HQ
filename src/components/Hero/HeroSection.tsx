@@ -24,9 +24,13 @@ const logos: Logo[] = [
     name: "Wormhole",
     url: "https://images.ctfassets.net/n8aw1cra6v98/2057wAXk6apiGi4vfTeC2u/9e200f5dfebaf6bb113c879243cf4508/wormwhole.svg?w=384&q=100",
   },
+  {
+    name: "Monad",
+    url: "https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa23cf_monad-horizontal-logo-inverted-rgb.svg",
+  },
 ];
 
-const words = ["Solana", "Wormhole", "Chainlink"];
+const words = ["Chainlink", "Solana", "Wormhole", "Monad"];
 
 const HeroSection: React.FC = () => {
   return (

@@ -1,4 +1,4 @@
-// File: /Users/sam/Desktop/Hq/src/app/layout.tsx
+// File: /Users/sam/Desktop/Hq/BlockDevs-HQ/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
