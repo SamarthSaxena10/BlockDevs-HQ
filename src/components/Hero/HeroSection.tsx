@@ -1,17 +1,35 @@
 "use client";
+import React from "react";
 import Link from "next/link";
 import { Spotlight } from "../ui/Spotlight";
 import { Button } from "../ui/moving-border";
 import Blockchains from "../Intro/Blockchains";
 
-const logos = [
+interface Logo {
+  name: string;
+  url: string;
+}
+
+const logos: Logo[] = [
   {
     name: "Chainlink",
     url: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5f760a499b56c47b8fa74fbb_chainlink-logo.svg",
   },
+  {
+    name: "Router",
+    url: "https://www.routerprotocol.com/_nuxt/img/logoNew.f8de0bf.svg",
+  },
+  {
+    name: "Solana",
+    url: "https://solana.com/_next/static/media/logotype.e4df684f.svg",
+  },
+  {
+    name: "Wormhole",
+    url: "https://images.ctfassets.net/n8aw1cra6v98/2057wAXk6apiGi4vfTeC2u/9e200f5dfebaf6bb113c879243cf4508/wormwhole.svg?w=384&q=100",
+  },
 ];
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <>
       <div
@@ -34,8 +52,8 @@ const HeroSection = () => {
         text-neutral-300 max-w-lg mx-auto"
           >
             Dive into our comprehensive blockchain courses and transform your
-            blockchain journey today.Whether you are beginner or looking to
-            refine your skills ,join us to unlock your true potential
+            blockchain journey today. Whether you are a beginner or looking to
+            refine your skills, join us to unlock your true potential.
           </p>
 
           <div className="mt-4">
@@ -53,7 +71,7 @@ const HeroSection = () => {
         <div className="w-full py-12 text-white">
           <div className="mx-auto w-full px-4 md:px-8 ">
             <div
-              className="group relative mt-6 flex gap-6 overflow-hidden p-2 "
+              className="group relative mt-6 flex gap-12 overflow-hidden p-2 "
               style={{
                 maskImage:
                   "linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 95%)",
@@ -61,16 +79,16 @@ const HeroSection = () => {
             >
               {Array(5)
                 .fill(null)
-                .map((index) => (
+                .map((_, index) => (
                   <div
                     key={index}
-                    className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-6 "
+                    className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-12 "
                   >
                     {logos.map((logo, key) => (
                       <img
                         key={key}
                         src={logo.url}
-                        className="h-10 w-28 px-2 brightness-100 text-white"
+                        className="h-8 w-auto px-4 brightness-100 text-white"
                         alt={`${logo.name}`}
                       />
                     ))}

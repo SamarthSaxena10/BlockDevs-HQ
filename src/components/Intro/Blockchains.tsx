@@ -6,9 +6,8 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
 import { EvervaultCard, Icon } from "../ui/evervault-card";
-// Adjust the import path as needed
-3;
-const Header = () => (
+
+const Header: React.FC = () => (
   <LampContainer>
     <motion.h1
       initial={{ opacity: 0.5, y: 100 }}
@@ -40,7 +39,7 @@ const items = [
   },
 ];
 
-const ChainlinkCard = () => (
+const ChainlinkCard: React.FC = () => (
   <CardContainer className="inter-var ml-[50px]">
     <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
       <CardItem
@@ -59,14 +58,14 @@ const ChainlinkCard = () => (
       <CardItem translateZ="100" className="w-full mt-4">
         <Image
           src="https://th.bing.com/th/id/OIP.FgGFG3YWH-aFkG1a2VTMOQAAAA?rs=1&pid=ImgDetMain"
-          height="1000"
-          width="1000"
+          height={1000}
+          width={1000}
           className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
           alt="thumbnail"
         />
       </CardItem>
       <div className="flex justify-between items-center mt-20">
-        <Link href="/chainlink" legacyBehavior>
+        <Link href="/Protocols/Chainlink" legacyBehavior>
           <a className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
             Let's get started
           </a>
@@ -76,7 +75,7 @@ const ChainlinkCard = () => (
   </CardContainer>
 );
 
-const EvervaultInfoCard = () => (
+const EvervaultInfoCard: React.FC = () => (
   <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
     <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
     <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
@@ -93,7 +92,7 @@ const EvervaultInfoCard = () => (
   </div>
 );
 
-function Blockchains() {
+const Blockchains: React.FC = () => {
   return (
     <div>
       <Header />
@@ -103,6 +102,6 @@ function Blockchains() {
       </div>
     </div>
   );
-}
+};
 
 export default Blockchains;
