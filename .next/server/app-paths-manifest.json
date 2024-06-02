@@ -1,3 +1,4 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/Protocols/Solana/page": "app/Protocols/Solana/page.js"
 }
