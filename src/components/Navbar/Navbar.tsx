@@ -72,14 +72,14 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           </MenuItem> */}
 
          <Link
-            href="/contact"
+            href=""
             className="hover:text-gray-400 transition-colors"
           >
            Resources
           </Link>
 
           <Link
-            href="/contact"
+            href=""
             className="hover:text-gray-400 transition-colors"
           >
             Contact Us

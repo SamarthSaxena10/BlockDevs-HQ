@@ -6,6 +6,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
 import { EvervaultCard, Icon } from "../ui/evervault-card";
+import Footer from "../Footer/Footer";
 
 const Header: React.FC = () => (
   <LampContainer>
@@ -90,8 +91,7 @@ const SolanaCard: React.FC = () => (
     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <EvervaultCard text="Solana" />
     <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-      Hover over this card to reveal an awesome effect. Running out of copy
-      here.
+      Hover over this card to explore and learn about Solana.
     </h2>
     <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
       <a href="/Protocols/Solana">  Lets get started</a>
@@ -108,8 +108,7 @@ const MonadCard: React.FC = () => (
     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <EvervaultCard text="Monad" />
     <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-      Hover over this card to reveal an awesome effect. Running out of copy
-      here.
+    Hover over this card to explore and learn about Monad.
     </h2>
     <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
       <a href="/Protocols/Monad">  Lets get started</a>
@@ -125,8 +124,7 @@ const Chainlink: React.FC = () => (
     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <EvervaultCard text="Chainlink" />
     <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-      Hover over this card to reveal an awesome effect. Running out of copy
-      here.
+    Hover over this card to explore and learn about Chainlink.
     </h2>
     <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
       <a href="/Protocols/Chainlink">  Lets get started</a>
@@ -142,8 +140,7 @@ const Uniswap: React.FC = () => (
     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <EvervaultCard text="Uniswap" />
     <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-      Hover over this card to reveal an awesome effect. Running out of copy
-      here.
+    Hover over this card to explore and learn about Uniswap.
     </h2>
     <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
       <a href="/Protocols/Uniswap">  Lets get started</a>
@@ -160,8 +157,7 @@ const Wormhole: React.FC = () => (
     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <EvervaultCard text="Wormhole" />
     <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-      Hover over this card to reveal an awesome effect. Running out of copy
-      here.
+    Hover over this card to explore and learn about Wormhole.
     </h2>
     <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
       <a href="/Protocols/Wormhole">  Lets get started</a>
@@ -178,8 +174,7 @@ const Graph: React.FC = () => (
     <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
     <EvervaultCard text="Graph" />
     <h2 className="dark:text-white text-black mt-4 text-sm font-light">
-      Hover over this card to reveal an awesome effect. Running out of copy
-      here.
+    Hover over this card to explore and learn about Graph.
     </h2>
     <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
       <a href="/Protocols/Graph">  Lets get started</a>
@@ -207,6 +202,10 @@ const Blockchains: React.FC = () => {
         <Graph/>
       </div>
       </div>
+     
+     <div>
+      <Footer/>
+     </div>
 
     </div>
   );

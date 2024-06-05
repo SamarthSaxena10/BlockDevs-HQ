@@ -1,6 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/Protocols/Solana/page": "app/Protocols/Solana/page.js",
-  "/Protocols/Monad/page": "app/Protocols/Monad/page.js",
-  "/Protocols/Uniswap/page": "app/Protocols/Uniswap/page.js"
+  "/page": "app/page.js"
 }
