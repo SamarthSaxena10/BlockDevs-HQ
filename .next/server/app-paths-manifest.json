@@ -1,3 +1,5 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/Protocols/Chainlink/page": "app/Protocols/Chainlink/page.js",
+  "/Protocols/Solana/page": "app/Protocols/Solana/page.js"
 }
