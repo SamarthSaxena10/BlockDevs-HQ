@@ -60,12 +60,14 @@ const HeroSection: React.FC = () => {
 
           <div className="mt-4">
             <div>
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-medium"
-              >
-                Explore
-              </Button>
+              <a href="#explore-protocols">
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-medium"
+                >
+                  Explore
+                </Button>
+              </a>
             </div>
           </div>
         </div>

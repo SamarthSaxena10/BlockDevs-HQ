@@ -13,6 +13,8 @@ const Footer: React.FC = () => {
             <a
               href="https://x.com/_BlockDevs"
               className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,19 +35,16 @@ const Footer: React.FC = () => {
           </li>
           <li>
             <a
-              href="https://t.me/BlockDevs"
+              href="https://t.me/+IeQ3sKQ_LIU4MzY9"
               className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                alt="Telegram"
                 className="inline w-7 h-7"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#fff"
-                  d="M12 0C5.373 0 0 5.373 0 12c0 5.533 3.773 10.153 8.826 11.478.644.117.882-.276.882-.616 0-.305-.011-1.116-.017-2.19-3.591.779-4.349-1.731-4.349-1.731-.586-1.486-1.43-1.883-1.43-1.883-1.169-.8.089-.784.089-.784 1.293.091 1.973 1.328 1.973 1.328 1.149 1.968 3.014 1.398 3.75 1.07.117-.832.45-1.399.818-1.721-2.867-.326-5.883-1.433-5.883-6.375 0-1.408.503-2.561 1.33-3.465-.134-.325-.577-1.634.126-3.408 0 0 1.084-.348 3.55 1.32A12.355 12.355 0 0 1 12 5.544c1.094.005 2.196.148 3.23.435 2.466-1.669 3.55-1.32 3.55-1.32.705 1.774.262 3.083.128 3.408.83.904 1.33 2.057 1.33 3.465 0 4.953-3.019 6.045-5.894 6.365.461.396.872 1.174.872 2.368 0 1.71-.015 3.086-.015 3.504 0 .344.236.738.887.614C20.23 22.153 24 17.533 24 12 24 5.373 18.627 0 12 0z"
-                />
-              </svg>
+              />
             </a>
           </li>
         </ul>

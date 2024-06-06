@@ -28,11 +28,13 @@ const Header: React.FC = () => (
   </LampContainer>
 );
 
-const Card: React.FC<{ text: string; link: string; imageUrl?: string }> = ({
-  text,
-  link,
-  imageUrl,
-}) => (
+interface CardProps {
+  text: string;
+  link: string;
+  imageUrl?: string;
+}
+
+const Card: React.FC<CardProps> = ({ text, link, imageUrl }) => (
   <Link href={link}>
     <div className="relative border border-gray-200 dark:border-gray-700 flex flex-col justify-center items-center p-4 h-48 w-full sm:w-60 mx-auto rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
       {text !== "Solana" && (
@@ -58,7 +60,10 @@ const Blockchains: React.FC = () => {
   return (
     <div>
       <Header />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+        id="explore-protocols"
+      >
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
           Explore Blockchains and Protocols
         </h2>
