@@ -28,17 +28,9 @@ const logos: Logo[] = [
     name: "Monad",
     url: "https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa23cf_monad-horizontal-logo-inverted-rgb.svg",
   },
-  {
-    name:"Uniswap",
-    url:"https://assets-global.website-files.com/606f63778ec431ec1b930f1f/632b299c9b9821236613fd90_Thumbnail-Uniswap-v3-Explained%403x-1.png",
-  },
-  {
-    name:"Canto",
-    url:"https://canto.io/_next/image?url=%2Flogo-3d.png&w=256&q=75",
-  }
 ];
 
-const words = ["Chainlink", "Solana", "Wormhole", "Monad", "Uniswap" ,"Canto"];
+const words = ["Chainlink", "Solana", "Wormhole", "Monad", "Uniswap", "Canto"];
 
 const HeroSection: React.FC = () => {
   return (
