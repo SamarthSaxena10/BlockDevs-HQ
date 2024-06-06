@@ -1,4 +1,4 @@
-// File: C:\Users\Ayush\Desktop\blockdevs2\BlockDevs-HQ\src\app\Protocols\Solana\page.tsx
+// File: /Users/sam/Desktop/Solana/Main/BlockDevs-HQ/src/app/Protocols/Solana/page.tsx
 import * as entry from '../../../../../src/app/Protocols/Solana/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
