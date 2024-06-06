@@ -60,6 +60,8 @@ const Blockchains: React.FC = () => {
           <Card text="Solana" link="/Protocols/Solana" />
           <Card text="Monad" link="#" />
           <Card text="Wormhole" link="#" />
+          <Card text="Aptos" link="#" />
+          <Card text="Sui" link="#" />
         </div>
       </div>
       <Footer />

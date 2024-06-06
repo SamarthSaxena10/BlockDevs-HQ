@@ -28,9 +28,17 @@ const logos: Logo[] = [
     name: "Monad",
     url: "https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa23cf_monad-horizontal-logo-inverted-rgb.svg",
   },
+  {
+    name: "Aptos",
+    url: "https://aptos.dev/img/aptos_word_dark.svg",
+  },
+  {
+    name: "Sui",
+    url: "https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/65690e5e73e9e2a416e3502f_sui-mark.svg",
+  },
 ];
 
-const words = ["Chainlink", "Solana", "Wormhole", "Monad", "Uniswap", "Canto"];
+const words = ["Chainlink", "Solana", "Wormhole", "Monad", "Sui", "Aptos"];
 
 const HeroSection: React.FC = () => {
   return (
