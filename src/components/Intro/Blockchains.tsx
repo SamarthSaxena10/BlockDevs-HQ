@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
-import { EvervaultCard, Icon } from "../ui/evervault-card";
 import Footer from "../Footer/Footer";
 import Link from "next/link";
 
@@ -29,20 +28,28 @@ const Header: React.FC = () => (
   </LampContainer>
 );
 
-const Card: React.FC<{ text: string; link: string }> = ({ text, link }) => (
+const Card: React.FC<{ text: string; link: string; imageUrl?: string }> = ({
+  text,
+  link,
+  imageUrl,
+}) => (
   <Link href={link}>
-    <div className="border border-gray-200 dark:border-gray-700 flex flex-col justify-between p-4 h-40 w-full sm:w-60 mx-auto rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
-      <div>
-        <h2 className="font-semibold text-gray-900 dark:text-white text-xl">
-          {text}
-        </h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-          Hover over this card to explore and learn about {text}.
-        </p>
-      </div>
-      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-end">
-        <Icon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-      </div>
+    <div className="relative border border-gray-200 dark:border-gray-700 flex flex-col justify-center items-center p-4 h-48 w-full sm:w-60 mx-auto rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
+      {text !== "Solana" && (
+        <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+          Coming Soon
+        </span>
+      )}
+      {imageUrl && (
+        <img
+          src={imageUrl}
+          alt={text}
+          className="h-24 w-24 mb-4 object-contain"
+        />
+      )}
+      <h2 className="font-semibold text-gray-900 dark:text-white text-xl">
+        {text}
+      </h2>
     </div>
   </Link>
 );
@@ -56,12 +63,36 @@ const Blockchains: React.FC = () => {
           Explore Blockchains and Protocols
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <Card text="Chainlink" link="/Protocols/Chainlink" />
-          <Card text="Solana" link="/Protocols/Solana" />
-          <Card text="Monad" link="#" />
-          <Card text="Wormhole" link="#" />
-          <Card text="Aptos" link="#" />
-          <Card text="Sui" link="#" />
+          <Card
+            text="Solana"
+            link="#"
+            imageUrl="https://solana.com/_next/static/media/logotype.e4df684f.svg"
+          />
+          <Card
+            text="Wormhole"
+            link="#"
+            imageUrl="https://images.ctfassets.net/n8aw1cra6v98/2057wAXk6apiGi4vfTeC2u/9e200f5dfebaf6bb113c879243cf4508/wormwhole.svg?w=384&q=100"
+          />
+          <Card
+            text="Monad"
+            link="#"
+            imageUrl="https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa23cf_monad-horizontal-logo-inverted-rgb.svg"
+          />
+          <Card
+            text="Chainlink"
+            link="#"
+            imageUrl="https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5f760a499b56c47b8fa74fbb_chainlink-logo.svg"
+          />
+          <Card
+            text="Aptos"
+            link="#"
+            imageUrl="https://aptos.dev/img/aptos_word_dark.svg"
+          />
+          <Card
+            text="Sui"
+            link="#"
+            imageUrl="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/65690e5e73e9e2a416e3502f_sui-mark.svg"
+          />
         </div>
       </div>
       <Footer />
