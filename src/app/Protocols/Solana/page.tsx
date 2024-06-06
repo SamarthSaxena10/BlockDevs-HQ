@@ -3,14 +3,14 @@ import Link from "next/link";
 
 function Page() {
   return (
-    <div className="flex flex-col min-h-screen bg-slate-900">
+    <div className="flex flex-col min-h-screen bg-white">
       <div className="bg-white-100 py-20 my-7">
         <div className="max-w-5xl mx-auto px-6 md:flex md:items-center md:justify-between">
           <div className="text-left w-full md:w-1/2">
             <h1 className="text-5xl font-bold text-pink-500">
               Explore Solana blockchain
             </h1>
-            <p className="mt-6 text-lg text-white">
+            <p className="mt-6 text-lg text-black">
             Solana is a blockchain built for mass adoption. It's a high performance network that is utilized for a range of use cases, including finance, 
             NFTs, payments, and gaming. Solana operates as a single global state machine, and is open, interoperable and decentralized.
             </p>
@@ -25,13 +25,13 @@ function Page() {
         </div>
       </div>
 
-      <div className="w-full bg-slate-900 py-20">
+      <div className="w-full bg-white py-20">
         <div className="max-w-5xl mx-auto px-6 md:flex md:items-center md:justify-between">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-semibold text-pink-500">
             Solana Account Model
             </h2>
-            <p className="mt-4 text-lg text-white">
+            <p className="mt-4 text-lg text-black">
             On Solana, all data is stored in what are referred to as "accounts”. The way data is organized on Solana resembles a key-value store, where each entry in the database is called an "account".
             </p>
 
@@ -51,7 +51,7 @@ function Page() {
         </div>
       </div>
 
-      <div className="w-full py-20 bg-slate-900">
+      <div className="w-full py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 md:flex md:items-center md:justify-between">
           <div className="md:w-1/2 order-2 md:order-1">
             <img
@@ -62,7 +62,7 @@ function Page() {
           </div>
           <div className="md:w-1/2 order-1 md:order-2 md:ml-12">
             <h2 className="text-3xl font-semibold text-pink-500">Transactions and Instructions</h2>
-            <p className="mt-4 text-lg text-white">
+            <p className="mt-4 text-lg text-black">
             On Solana, we send transactions to interactions with the network. Transactions include one or more instructions, 
             each representing a specific operation to be processed.
              The execution logic for instructions is stored on programs deployed to the Solana network, 
