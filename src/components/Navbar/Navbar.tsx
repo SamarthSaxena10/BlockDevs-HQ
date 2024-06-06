@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
-import { HoveredLink, Menu, MenuItem } from "../ui/navbar-menu";
+import { HoveredLink, MenuItem } from "../ui/navbar-menu";
 
 type NavbarProps = {
   className?: string;
@@ -57,40 +57,23 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             Home
           </Link>
 
-          {/* MenuItem with dropdown */}
-          {/* <MenuItem
-            setActive={handleMenuHover}
-            active={active}
-            item="Resources"
-          >
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/courses">All Courses</HoveredLink>
-              <HoveredLink href="/courses">Basic theory</HoveredLink>
-              <HoveredLink href="/courses">Advanced Composition</HoveredLink>
-              <HoveredLink href="/courses">Production</HoveredLink>
-            </div>
-          </MenuItem> */}
-
-         <Link
-            href=""
-            className="hover:text-gray-400 transition-colors"
-          >
-           Resources
+          <Link href="#" className="hover:text-gray-400 transition-colors">
+            Resources
           </Link>
 
-          <Link
-            href=""
-            className="hover:text-gray-400 transition-colors"
-          >
+          <Link href="#" className="hover:text-gray-400 transition-colors">
             Contact Us
           </Link>
         </div>
 
-        {/* Right section: Language selector and button */}
+        {/* Right section: Registration button */}
         <div className="hidden md:flex items-center space-x-4 ml-8">
-          <Link href="/launch-app">
+          <Link
+            href="https://app.deform.cc/form/44c28c9a-940e-405b-9a55-ef3cdcaefc8b"
+            target="_blank"
+          >
             <button className="bg-custom-pink text-white px-4 py-2 rounded-full">
-              Launch App
+              Registration
             </button>
           </Link>
         </div>
@@ -130,27 +113,24 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           >
             Home
           </Link>
-          <MenuItem
-            setActive={handleMenuHover}
-            active={active}
-            item="Our Courses"
+          <Link
+            href="#"
+            className="block hover:text-gray-400 transition-colors"
           >
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/courses">All Courses</HoveredLink>
-              <HoveredLink href="/courses">Basic theory</HoveredLink>
-              <HoveredLink href="/courses">Advanced Composition</HoveredLink>
-              <HoveredLink href="/courses">Production</HoveredLink>
-            </div>
-          </MenuItem>
+            Resources
+          </Link>
           <Link
             href="/contact"
             className="block hover:text-gray-400 transition-colors"
           >
             Contact Us
           </Link>
-          <Link href="/launch-app">
+          <Link
+            href="https://app.deform.cc/form/44c28c9a-940e-405b-9a55-ef3cdcaefc8b"
+            target="_blank"
+          >
             <button className="bg-custom-pink text-white px-4 py-2 rounded-full w-full">
-              Launch App
+              Registration
             </button>
           </Link>
         </div>
