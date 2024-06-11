@@ -31,28 +31,34 @@ const Header: React.FC = () => (
 interface CardProps {
   text: string;
   link: string;
+  target?: string;
   imageUrl?: string;
 }
 
-const Card: React.FC<CardProps> = ({ text, link, imageUrl }) => (
-  <Link href={link}>
-    <div className="relative border border-gray-200 dark:border-gray-700 flex flex-col justify-center items-center p-4 h-48 w-full sm:w-60 mx-auto rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
-      {text !== "Solana" && (
-        <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-          Coming Soon
-        </span>
-      )}
-      {imageUrl && (
-        <img
-          src={imageUrl}
-          alt={text}
-          className="h-24 w-24 mb-4 object-contain"
-        />
-      )}
-      <h2 className="font-semibold text-gray-900 dark:text-white text-xl">
-        {text}
-      </h2>
-    </div>
+const Card: React.FC<CardProps> = ({ text, link, target, imageUrl }) => (
+  <Link href={link} passHref legacyBehavior>
+    <a
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+    >
+      <div className="relative border border-gray-200 dark:border-gray-700 flex flex-col justify-center items-center p-4 h-48 w-full sm:w-60 mx-auto rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
+        {text !== "Solana" && (
+          <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+            Coming Soon
+          </span>
+        )}
+        {imageUrl && (
+          <img
+            src={imageUrl}
+            alt={text}
+            className="h-24 w-24 mb-4 object-contain"
+          />
+        )}
+        <h2 className="font-semibold text-gray-900 dark:text-white text-xl">
+          {text}
+        </h2>
+      </div>
+    </a>
   </Link>
 );
 
@@ -70,7 +76,8 @@ const Blockchains: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <Card
             text="Solana"
-            link="#"
+            link="https://soldevs.vercel.app/"
+            target="_blank"
             imageUrl="https://solana.com/_next/static/media/logotype.e4df684f.svg"
           />
           <Card

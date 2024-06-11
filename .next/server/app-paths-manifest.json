@@ -1,4 +1,4 @@
 {
   "/page": "app/page.js",
-  "/Protocols/Solana/page": "app/Protocols/Solana/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
