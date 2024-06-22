@@ -4,7 +4,9 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 
 
+
 const testimonials = [
+  
     {
       quote:
         "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
@@ -38,7 +40,9 @@ const testimonials = [
 
   export function InfiniteMovingCardsDemo() {
     return (
+
       <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+              <h1 className="text-white text-2xl text-center font-semibold mb-[40px]"> Testimonials </h1>
         <InfiniteMovingCards
           items={testimonials}
           direction="right"

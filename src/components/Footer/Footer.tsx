@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-purple-500 py-12 px-4 font-sans tracking-wide">
+    <footer className="bg-black text-white font-medium py-12 px-4 font-sans tracking-wide">
       <div className="text-center">
         <h6 className="text-base">Stay connected with us:</h6>
 

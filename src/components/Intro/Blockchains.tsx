@@ -77,7 +77,7 @@ const Blockchains: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <Card
             text="Solana"
-            link="https://soldevs.vercel.app/"
+            link="https://solanaxdevs.vercel.app/"
             target="_blank"
             imageUrl="https://solana.com/_next/static/media/logotype.e4df684f.svg"
           />
@@ -109,8 +109,11 @@ const Blockchains: React.FC = () => {
         </div>
 
       </div>
+
+      <div>
       <Testimonial/>
       <Footer />
+      </div>
     </div>
   );
 };
