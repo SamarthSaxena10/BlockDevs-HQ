@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
 import Footer from "../Footer/Footer";
 import Link from "next/link";
+import Testimonial from "../Testimonal/Testimonial";
 
 const Header: React.FC = () => (
   <LampContainer>
@@ -106,7 +107,9 @@ const Blockchains: React.FC = () => {
             imageUrl="https://cdn.prod.website-files.com/6425f546844727ce5fb9e5ab/65690e5e73e9e2a416e3502f_sui-mark.svg"
           />
         </div>
+
       </div>
+      <Testimonial/>
       <Footer />
     </div>
   );
