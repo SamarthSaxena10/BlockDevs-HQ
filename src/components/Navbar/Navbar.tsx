@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             target="_blank"
           >
             <button className="bg-custom-pink text-white px-4 py-2 rounded-full">
-              Registration
+              Sign up
             </button>
           </Link>
         </div>

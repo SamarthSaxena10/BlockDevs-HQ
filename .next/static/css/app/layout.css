@@ -1,6 +1,6 @@
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src\\app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
   font-family: '__Inter_aaf875';
@@ -939,6 +939,9 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
 .ml-8 {
   margin-left: 2rem;
 }
@@ -953,15 +956,6 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-\[50px\] {
-  margin-top: 50px;
-}
-.mb-\[220px\] {
-  margin-bottom: 220px;
-}
-.mb-\[40px\] {
-  margin-bottom: 40px;
 }
 .block {
   display: block;
@@ -1653,10 +1647,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
-.text-purple-500 {
-  --tw-text-opacity: 1;
-  color: rgb(168 85 247 / var(--tw-text-opacity));
-}
 .text-transparent {
   color: transparent;
 }
@@ -1910,11 +1900,6 @@ video {
 .dark\:text-white:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark\:text-purple-500:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
