@@ -91,11 +91,11 @@ const Blockchains: React.FC = () => {
             link="#"
             imageUrl="https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa23cf_monad-horizontal-logo-inverted-rgb.svg"
           />
-          <Card
+          {/* <Card
             text="Chainlink"
             link="#"
             imageUrl="https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5f760a499b56c47b8fa74fbb_chainlink-logo.svg"
-          />
+          /> */}
           <Card
             text="Aptos"
             link="#"
