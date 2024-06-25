@@ -99,7 +99,7 @@ const Blockchains: React.FC = () => {
           <Card
             text="Aptos"
             link="#"
-            imageUrl="https://aptos.dev/img/aptos_word_dark.svg"
+            imageUrl="https://res.coinpaper.com/coinpaper/Aptos_mark_BLK_02443605a1.png"
           />
           <Card
             text="Sui"

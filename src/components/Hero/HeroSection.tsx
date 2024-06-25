@@ -30,7 +30,7 @@ const logos: Logo[] = [
   },
   {
     name: "Aptos",
-    url: "https://aptos.dev/img/aptos_word_dark.svg",
+    url: "https://res.coinpaper.com/coinpaper/Aptos_mark_BLK_02443605a1.png",
   },
   {
     name: "Sui",
