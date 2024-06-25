@@ -13,10 +13,6 @@ interface Logo {
 
 const logos: Logo[] = [
   {
-    name: "Chainlink",
-    url: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5f760a499b56c47b8fa74fbb_chainlink-logo.svg",
-  },
-  {
     name: "Solana",
     url: "https://solana.com/_next/static/media/logotype.e4df684f.svg",
   },
@@ -31,6 +27,7 @@ const logos: Logo[] = [
   {
     name: "Aptos",
     url: "https://aptos.dev/img/aptos_word_dark.svg",
+    //alt link: https://aptos.dev/docs/aptos-black.svg
   },
   {
     name: "Sui",
@@ -38,7 +35,7 @@ const logos: Logo[] = [
   },
 ];
 
-const words = ["Chainlink", "Solana", "Wormhole", "Monad", "Sui", "Aptos"];
+const words = ["Solana", "Wormhole", "Monad", "Sui", "Aptos"];
 
 const HeroSection: React.FC = () => {
   return (
